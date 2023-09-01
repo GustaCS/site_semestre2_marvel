@@ -11,19 +11,19 @@ export default function Home() {
     },
     {
       nome:"Captão America",
-      foto:"https://portalpopline.com.br/wp-content/uploads/2023/06/homem-aranha-4-2025-758x570.jpg"
+      foto:"https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/02/01-49.jpg"
     },
     {
       nome:"Thanos",
-      foto:"https://portalpopline.com.br/wp-content/uploads/2023/06/homem-aranha-4-2025-758x570.jpg"
+      foto:"https://upload.wikimedia.org/wikipedia/pt/f/fa/Josh_Brolin_como_Thanos.jpeg"
     },
     {
       nome:"Hulk",
-      foto:"https://portalpopline.com.br/wp-content/uploads/2023/06/homem-aranha-4-2025-758x570.jpg"
+      foto:"https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/hulk-png-sem-fundo9.png"
     },
     {
       nome:"Pantera Negra",
-      foto:"https://portalpopline.com.br/wp-content/uploads/2023/06/homem-aranha-4-2025-758x570.jpg"
+      foto:"https://3.bp.blogspot.com/-OG9nOFZnDtY/VE_8PggXt-I/AAAAAAAAI4I/OK0ZEc31Isw/s1600/B1DffjMCUAEN6Z5.jpg%2Blarge.jpg"
     }
   ]
 
