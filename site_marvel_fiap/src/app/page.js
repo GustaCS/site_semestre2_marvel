@@ -6,22 +6,27 @@ export default function Home() {
 
   const marvel =[
     {
+      id:1,
       nome:"homem Aranha",
       foto:"https://portalpopline.com.br/wp-content/uploads/2023/06/homem-aranha-4-2025-758x570.jpg"
     },
     {
+      id:2,
       nome:"Captão America",
       foto:"https://pop.proddigital.com.br/wp-content/uploads/sites/8/2023/02/01-49.jpg"
     },
     {
+      id:3,
       nome:"Thanos",
       foto:"https://upload.wikimedia.org/wikipedia/pt/f/fa/Josh_Brolin_como_Thanos.jpeg"
     },
     {
+      id:4,
       nome:"Hulk",
       foto:"https://i0.wp.com/multarte.com.br/wp-content/uploads/2019/03/hulk-png-sem-fundo9.png"
     },
     {
+      id:5,
       nome:"Pantera Negra",
       foto:"https://3.bp.blogspot.com/-OG9nOFZnDtY/VE_8PggXt-I/AAAAAAAAI4I/OK0ZEc31Isw/s1600/B1DffjMCUAEN6Z5.jpg%2Blarge.jpg"
     }
