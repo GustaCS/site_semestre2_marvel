@@ -12,7 +12,7 @@ const getHash=(timeStamp)=>md5(timeStamp+private_key+apikey)
 
 const timeStamp = pegarTimeStamp()
 const hash = getHash(String(timeStamp))
-const query = `limit=12&ts=${timeStamp}&apikey=${apikey}&hash=${hash}`
+const query = `limit=15&ts=${timeStamp}&apikey=${apikey}&hash=${hash}`
 
 const url=`${api_base_url}/characters?${query}`
 
@@ -32,7 +32,10 @@ export default async function Home() {
       <div className=" w-full h-screen bg-black bg-opacity-50 blur-1 absolute">
         {/* menu */}
       <div className="w-screen h-20 bg-red-800 bg-opacity-50">
-        <h1 className="text-zinc-100 border-solid text-4xl p-4 float-left">MARVEL</h1>
+        {/*logo marvel*/}
+        <div className="absolute">
+        <img src="/image/marvel-logo-nav.png" className="w-28  h-28 pb-8"/>
+      </div>
         <ul className="flex pt-5 pl-32 float-left">
           <li className="text-zinc-100 text-3xl ml-3"><a href="#">Herois</a></li>
           <li className="text-zinc-100 text-3xl ml-3"><a href="#">Vilões</a></li>
