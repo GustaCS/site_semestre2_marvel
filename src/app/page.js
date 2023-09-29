@@ -1,7 +1,10 @@
+'use client'
+import { serverLogout } from "@/actions/auth";
 import Campo_card from "@/components/Campo_card";
 import Card_herois from "@/components/Cards_herois";
 import Titulo from "@/components/Titulo";
 import md5 from "md5";
+import { useRouter } from "next/navigation";
 
 const api_base_url = "https://gateway.marvel.com/v1/public"
 const apikey="a56ade455a618737bdcba62667a72fbe"
@@ -22,8 +25,14 @@ async function carregarDados(){
   return json.data.results
 }
 export default async function Home() {
+  const {push} = useRouter()
   carregarDados()
   const dadosMarvel = await carregarDados()
+
+  function logout(){
+    serverLogout()
+    push("/login")
+  }
   return ( //JSX
     <main>
       <div className="absolute">
@@ -41,7 +50,8 @@ export default async function Home() {
           <li className="text-zinc-100 text-3xl ml-3"><a href="#">Vilões</a></li>
           <li className="text-zinc-100 text-3xl ml-3"><a href="#">Equipes</a></li>
         </ul>
-        <input type="text" className="m-5 p-2 ml-60 rounded-md  w-1/4"></input>
+        <input type="text" className="m-5  ml-40 rounded-md  w-1/4" placeholder="Digite o nome do personagem"></input>
+        <button className="text-red-400 text-3xl ml-4 pt-5" onClick={logout}>Logout</button>
       </div>
       {/*personagens*/}
       <Titulo>Personagens</Titulo>
